@@ -23,7 +23,17 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 输入`top`后按`1`
 
 # CI中使用公私钥
-1. 生成当前用户的ssh: ssh-keygen
-2. 创建authorized_keys并设置权限: chmod 600 authorized_keys 
-3. 添加公钥:  cat id_rsa.pub >> ~/.ssh/authorized_keys
+1. 生成当前用户的ssh: 
+```
+ssh-keygen -t rsa
+```
+2. 创建authorized_keys并设置权限: 
+```
+touch authorized_keys
+chmod 600 authorized_keys 
+```
+3. 添加公钥:  
+```
+cat id_rsa.pub >> ~/.ssh/authorized_keys
+```
 4. 复制id.rsa的内容，添加到CI/CD里面的 SSH_PRIVATE_KEy

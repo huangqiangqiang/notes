@@ -39,11 +39,6 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-7 . hello world
-
-```
-sudo docker run hello-world
-```
 
 ### 安装 Docker Compose
 
