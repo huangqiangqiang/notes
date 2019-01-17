@@ -37,3 +37,13 @@ chmod 600 authorized_keys
 cat id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 4. 复制id.rsa的内容，添加到CI/CD里面的 SSH_PRIVATE_KEy
+
+# 查看文件夹大小
+```
+du -h
+```
+
+# 查看系统一级文件夹大小
+```
+df -h
+```
