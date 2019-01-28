@@ -1,0 +1,69 @@
+# React-Native开发环境搭建（iOS）
+
+接下来可能要接手其他团队的RN项目，帮忙一起开发。就先试着搭建一下开发环境。
+
+## 安装Xcode
+React-Native使用Xcode来编译RN项目，App Store下载
+
+## 升级node，npm
+
+已经安装了低版本的node的话，可以使用命令
+```
+node install -g n
+```
+来安装`n`模块，`n`模块管理`node`版本
+
+```
+# 使用最新稳定版
+n stable
+
+# 使用最新版本
+n latest
+
+# 指定具体版本
+n v6.2.0
+```
+
+升级npm使用一下命令
+
+```
+npm -g install npm@next
+```
+
+# 安装watchman
+
+watchman监控文件的变动。
+
+如不安装watchman，还有可能报一个错
+```
+EMFILE: too many open files
+```
+
+这个安装了很久，总是装不成功，最后通过这四行命令解决（我也不知到为什么）
+```
+brew update
+brew uninstall watchman
+sudo chown -R `whoami` /usr/local
+brew link pcre
+brew install watchman
+```
+安装成功后
+```
+watchman -v
+4.9.0
+```
+
+## 创建项目
+
+```
+react-native init AwesomeProject
+```
+
+创建完成后可以使用Xcode打开`AwesomeProject/ios`目录，点击运行，正常的话可以在模拟器中跑起来。
+
+也可以使用命令启动
+```
+cd AwesomeProject
+react-native run-ios
+```
+我在第一次使用命令启动的使用，发生了点异常，执行后启动了模拟器，控制台输出一些log后，一直打印一些数字，不知道是什么情况，后来重新创建了项目，在Xcode中启动，启动成功了再用命令行来启动就可以了。
