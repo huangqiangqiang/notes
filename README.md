@@ -3,7 +3,7 @@
 - [aria2](./aria2.md)
 - [charles使用](./charles使用.md)
 - [docker常用命令](./docker常用命令.md)
-- [gcp vm](./gcp%20vm.md)
+- [gcp-vm](./gcp-vm.md)
 - [git常用命令](./git常用命令.md)
 - [NAS](./NAS.md)
 - [php开发环境搭建-Yii2](./php开发环境搭建-Yii2.md)
