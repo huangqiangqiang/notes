@@ -1,5 +1,4 @@
-# notes
-笔记
+# 笔记
 
 - [android调试](./android调试.md)
 - [aria2](./aria2.md)
