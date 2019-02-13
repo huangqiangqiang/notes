@@ -6,7 +6,7 @@
 - [gcp vm](./gcp%20vm.md)
 - [git常用命令](./git常用命令.md)
 - [NAS](./NAS.md)
-- [php开发环境搭建(yii2)](./php开发环境搭建(yii2).md)
+- [php开发环境搭建-Yii2](./php开发环境搭建-Yii2.md)
 - [vscode常用命令](./vscode常用命令.md)
 - [压力测试](./压力测试.md)
 - [机器学习](./机器学习.md)
