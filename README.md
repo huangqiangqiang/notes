@@ -24,3 +24,5 @@
   - [Gitlab的CI流程梳理](./blog/2018.4.2-Gitlab的CI流程梳理.md)
   - [创建自己的直播app](./blog/2018.2.1-创建自己的直播app.md)
   - [服务器迁移记录](./blog/2017.12.18-服务器迁移记录.md)
+  - [ideviceinstaller使用](./blog/2017.12.13-ideviceinstaller使用.md)
+  - [莫费时-项目开发总结](./blog/2017.12.7-莫费时-项目开发总结.md)
