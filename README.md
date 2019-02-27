@@ -21,3 +21,6 @@
 - Blog
   - [让nginx支持https](./blog/2018.10.10-让nginx支持https.md)
   - [搭建npm私有库](./blog/2018.4.26-搭建npm私有库.md)
+  - [Gitlab的CI流程梳理](./blog/2018.4.2-Gitlab的CI流程梳理.md)
+  - [创建自己的直播app](./blog/2018.2.1-创建自己的直播app.md)
+  - [服务器迁移记录](./blog/2017.12.18-服务器迁移记录.md)
