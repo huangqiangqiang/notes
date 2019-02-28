@@ -12,6 +12,9 @@ git push origin -d <branch>
 
 # 删除远程tag
 git push origin --delete tag <tag>
+
+# 把远端的最新代码合并到当前分支
+git pull --rebase origin master
 ```
 
 在工作中遇到了一个需求，项目中的一些配置信息不提交到gitlab上面去，但是没有配置的话项目又跑不起来，而且有些配置文件是写在源文件内的，又不能写在gitignore里面去，所以采用以下办法：
