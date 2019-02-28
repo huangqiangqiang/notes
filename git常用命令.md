@@ -63,3 +63,14 @@ git commit -m 'xxx'
 git apply conf.patch
 
 ```
+
+临时要切换分支，要先保存现在的修改记录
+
+```
+# 暂存修改
+git stash save 'xxx'
+# 还原修改
+git stash pop
+# 查看stash
+git stash list
+```
