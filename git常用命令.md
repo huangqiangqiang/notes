@@ -1,3 +1,4 @@
+先讲一下为什么网上关于git讲解的图片中commit箭头总是感觉画反了，因为每个commit都有一个索引指向它的上游commit。
 
 ```
 # 创建并切换分支
@@ -28,13 +29,34 @@ git add .
 git commit -m 'fix bug'
 
 # 在本地分支中创建一个新分支并切换到新分支
-git checkout -b <new branch>
+git checkout -b <new branch> origin/master
 
-# 选择要提交的commit
+# 在新的分支上选择要提交的commit
 git cherry-pick commit1 commit2 ... commitN
 或
 git cherry-pick commit1..commitN
 
+注意：不包含commit1，实际上选中的commit是commit2到commitN
+
 # push筛选过的分支到远端
 git push origin remote <branch name>
+
+```
+
+还有一种比较简单的方式，使用diff生成patch和apply命令
+
+```
+# 先把修改的配置项生成patch文件
+git diff > conf.patch
+
+# 提交前还原patch
+git apply -R conf.patch
+
+# 提交代码
+git add .
+git commit -m 'xxx'
+
+# 在填写配置
+git apply conf.patch
+
 ```
