@@ -18,6 +18,7 @@
 - React-Native
   - [开发环境搭建](./React-Native/开发环境搭建.md) 
   - [实际接手项目后的一些坑](./React-Native/实际接手项目后的一些坑.md)
+  - [iOS离线测试包](./React-Native/iOS离线测试包.md)
 - Blog
   - [让nginx支持https](./blog/2018.10.10-让nginx支持https.md)
   - [搭建npm私有库](./blog/2018.4.26-搭建npm私有库.md)
