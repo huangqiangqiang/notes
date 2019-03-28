@@ -5,3 +5,5 @@
 2. 证书和描述文件弄好后确保Scheme为release，点Xcode的`Archive`按钮，包打好后点击`Distribute App -> iOS App Store`，接下去就是一步步根据自己的设置去设置了。
 
 3. 最后点击upload上传后，`App Connect`的`testflight`栏就会出现刚刚提交的包了，不过可能状态还是为`正在处理`，过会就好了。
+
+4. 如果点击upload上传成功后，但是在testflight没看到提交的版本，可能是包有问题，关注一下apple发来的邮件。
