@@ -20,3 +20,4 @@ services:
 ```
 mongodb://${username}:${password}@SERVER_IP:27017/${database_name}?authSource=admin
 ```
+`authSource`表示用哪个数据库来验证用户名和密码，默认是`admin`
