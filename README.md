@@ -22,6 +22,7 @@
   - [iOS离线测试包](./React-Native/iOS离线测试包.md)
   - [Testflight](./React-Native/Testflight.md)
 - Blog
+  - [JS知识点](./blog/2019.4.11-JS知识点.md)
   - [让nginx支持https](./blog/2018.10.10-让nginx支持https.md)
   - [搭建npm私有库](./blog/2018.4.26-搭建npm私有库.md)
   - [Gitlab的CI流程梳理](./blog/2018.4.2-Gitlab的CI流程梳理.md)
