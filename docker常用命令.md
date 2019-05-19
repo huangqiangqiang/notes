@@ -71,3 +71,32 @@ docker rmi $(docker images -f "dangling=true" -q)
 ```
 docker inspect [container_name]
 ```
+
+# 快速把一个项目打包成镜像上传到服务器
+- 项目根目录添加dockerfile，把所有项目文件都拷贝进去。如：
+```
+FROM node:alpine
+WORKDIR /usr/src/app
+COPY . .
+CMD [ "npm", "start" ]
+```
+
+- 项目正常跑起来后，打包成镜像
+```
+docker build -t <ImageName> .
+```
+
+- 把镜像存成tar文件
+```
+docker save -o xxx.tar <ImageName>
+```
+
+- 把tar文件上传到服务器
+```
+scp xxx.tar root@127.0.0.1:/root
+```
+
+- 把tar文件载入镜像
+```
+docker load --input xxx.tar
+```
