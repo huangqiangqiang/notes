@@ -140,3 +140,6 @@ bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,udp://tracker.internetwa
 ## 总结
 
 实际上aria2在大部分情况下，下载速度比不过迅雷的，很有可能迅雷速度好几M，aria2却是0，只是aria2的优势是可以离线下载，就是安装在路由器上，启动一个下载任务，等过段时间去看，已经下完了，还有就是迅雷会屏蔽一些资源，限速这些，aria2却不受限制。
+
+## 使用docker运行
+[https://github.com/wahyd4/aria2-ariang-docker](https://github.com/wahyd4/aria2-ariang-docker)
