@@ -23,6 +23,8 @@
   - [iOS离线测试包](./React-Native/iOS离线测试包.md)
   - [Testflight](./React-Native/Testflight.md)
 - Blog
+  - [k8s入门](./blog/2019.07.30-k8s入门.md)
+  - [JWT](./blog/2019.07.29-JWT.md)
   - [2019年中总结](./blog/2019.07.09-年中总结.md)
   - [kong搭建api网关](./blog/2019.07.05-使用kong作为api网关.md)
   - [Go项目搭建](./blog/2019.4.21-Go项目搭建.md)
