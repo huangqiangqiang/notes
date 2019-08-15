@@ -4,6 +4,9 @@
 
 docker在mac下是一个客户端，[下载](https://download.docker.com/mac/stable/Docker.dmg)
 
+### Windows
+[下载](https://docs.docker.com/docker-for-windows/install/)
+
 ### Ubuntu
 ```
 wget -qO- https://get.docker.com/ | sh
@@ -59,7 +62,27 @@ docker ps
 docker ps -a
 
 # 查看容器的详细信息
-docker inspect <dockerName|dockerId>
+docker inspect <container_name|container_id>
+
+# 配合dockerfile使用
+docker build -t <image_name>:<image_tag> .
+
+# 进入容器内部
+docker exec -it <container_name> /bin/sh
+
+# 删除容器
+docker rm <container_name>
+
+# 删除镜像
+docker rmi <image_name>
+```
+
+# docker login
+
+docker login功能主要是用于登录，因为有些image（镜像）需要登录后才能pull，不是谁都能拉下来的。比如，gitlab自带一个docker仓库，你可以把自己的镜像push上去，也可以pull下来，当然，这些都是需要权限的。
+就是需要先执行`docker login`。
+```
+docker login -u <gitlab_username> -p <gitlab_password>
 ```
 
 # Docker的network
@@ -70,6 +93,7 @@ docker network create <network_name> --subnet=172.120.0.0/16
 
 # 删除network（删除的时候必须确认该network没有其他容器正在使用）
 docker network rm <network_name>
+
 ```
 
 注：`172.120.0.0/16`代表的是`172.120.0.0~172.120.255.255`的范围，16是掩码位，ipv4是32位的，相当于把前16位给固定死了，只能改后16位。类似：
@@ -81,7 +105,7 @@ docker network rm <network_name>
 version: '2'
 
 services:
-  app:
+  app_name:
     build: ./
     networks:
       - my_network
@@ -91,4 +115,15 @@ services:
 networks:
   my_network:
     external: true
+```
+
+# dockerfile
+
+这是我公司一个go项目的dockerfile，`alpine`是一个很轻量的linux操作系统，只有5m大小
+
+```
+FROM alpine
+WORKDIR /work
+COPY . /work/
+CMD ["./app"]
 ```
