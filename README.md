@@ -13,7 +13,7 @@
 - [机器学习](./机器学习.md)
 - [设计图交付验收注意事项](./设计图交付验收注意事项.md)
 - [路由器](./路由器.md)
-- [mongo用户验证](./mongo用户验证.md)
+- [MongoDB](./MongoDB.md)
 - 教程
   - [docker](./tutorial/docker.md)
 - 微信小程序
