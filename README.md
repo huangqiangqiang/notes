@@ -14,6 +14,7 @@
 - [设计图交付验收注意事项](./设计图交付验收注意事项.md)
 - [路由器](./路由器.md)
 - [MongoDB](./MongoDB.md)
+- [Gitlab部分功能使用指南](./Gitlab部分功能使用指南.md)
 - 教程
   - [docker](./tutorial/docker.md)
 - 微信小程序
