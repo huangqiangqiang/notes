@@ -107,7 +107,7 @@ docker load --input xxx.tar
 ```
 docker login
 ```
-登录成功后，执行 push
+输入用户名和密码，登录成功后，执行 push
 ```
 docker push hqqsk8/golang
 ```
