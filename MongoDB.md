@@ -45,7 +45,12 @@ mongodb://${username}:${password}@SERVER_IP:27017/${database_name}?authSource=ad
 
 # 数据备份
 
+最新有一个需求，因为有很多项目都有搜集请求日志。导致 mongodb 中的日志很多，但又是不怎么重要的。所以现在的优化方案是每周做一次本周到上周时间范围内的备份，然后删除3个月以前的数据。因为日志主要是查询用，还原当时的请求，一般时间太久的话是不需要的，所以直接备份成文件，从数据库中删除。
+
+我们采用的是 mongodump 命令备份 mongodb 数据，然后放入 crontab 每周定时执行一次。
+
 mongo 数据库的备份主要使用 mongodump 命令
+
 ```
 mongodump -h 127.0.0.1:27017 -d test -o /mongodbjump
 ```
@@ -68,6 +73,33 @@ gte: greater than or equal 大于等于
 lt: less than 小于
 lte: less than or equal 小于等于
 ```
+
+话不多说，直接贴我们现在在用的备份脚本：
+
+```
+# mongo_bak.sh
+
+#!/bin/sh
+# 没有设置 PATH 会报错：docker command not found
+PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+# 当前时间毫秒
+today_stamp=`expr $(date +%s) \* 1000`
+offset=`expr 3600 \* 24 \* 7 \* 1000`
+lastweek_stamp=`expr $today_stamp - $offset`
+
+# 备份的文件夹名称
+DATE=`date +%Y_%m_%d_%H_%M_%S`   
+back_path="/mongodump/mongo_bak_$DATE"
+
+# 执行容器内的命令，又不用进入容器
+query="{\"created_at\":{\$gte:Date($lastweek_stamp),\$lt:Date($today_stamp)}}"
+bakCommand="mongodump -h 127.0.0.1:27017 -d lltest -c test -q '$query' -o $back_path"
+echo $bakCommand
+docker exec test_mongodb /bin/sh -c "$bakCommand"
+```
+
+以上脚本为每周日0点执行，生成的备份文件在 `/mongodump/mongo_bak_$DATE` 目录。
 
 备份恢复
 
