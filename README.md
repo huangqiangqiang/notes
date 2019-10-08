@@ -15,6 +15,7 @@
 - [路由器](./路由器.md)
 - [MongoDB](./MongoDB.md)
 - [Gitlab部分功能使用指南](./Gitlab部分功能使用指南.md)
+- [linux常用命令](./linux常用命令.md)
 - 教程
   - [docker](./tutorial/docker.md)
 - 微信小程序
