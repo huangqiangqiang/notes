@@ -15,6 +15,8 @@ git push origin --delete tag <tag>
 
 # 把远端的最新代码合并到当前分支
 git pull --rebase origin master
+# 如果再做rebase之前push过代码，那么rebase后远端和现在的分支commit记录已经不一样了，这时是push不上去的，只能通过 --force 强制让远端的分支ocmmit记录和本地的一样
+git push --force
 ```
 
 在工作中遇到了一个需求，项目中的一些配置信息不提交到gitlab上面去，但是没有配置的话项目又跑不起来，而且有些配置文件是写在源文件内的，又不能写在gitignore里面去，所以采用以下办法：
