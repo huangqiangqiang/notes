@@ -89,3 +89,12 @@ docker login
 ```
 docker push hqqsk8/golang
 ```
+
+# docker内部时区改成东8区
+
+dockerfile 加入以下命令
+```
+RUN apk --no-cache add tzdata  && \
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    echo "Asia/Shanghai" > /etc/timezone
+```
