@@ -81,11 +81,22 @@ docker load --input xxx.tar
 
 # Push 自己做的镜像到 dockerhub
 
-首先，自己做的镜像名字有要求，必须是 `dockerhub的用户名/镜像名` ，比如 `hqqsk8/golang` ，如果带 tag 的话就是，`hqqsk8/golang:latest`，镜像做好了之后就是先登录dockerhub
+首先，自己做的镜像名字有要求，必须是 `dockerhub的用户名/镜像名` ，比如 `hqqsk8/golang` ，
+
+镜像重命名
+
+```
+docker tag <原来镜像的名称> <修改后的镜像名称>
+```
+
+如果带 tag 的话就是，`hqqsk8/golang:latest`，镜像做好了之后就是先登录dockerhub
+
 ```
 docker login
 ```
+
 输入用户名和密码，登录成功后，执行 push
+
 ```
 docker push hqqsk8/golang
 ```
