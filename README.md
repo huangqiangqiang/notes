@@ -1,6 +1,7 @@
 
 - [redis基本命令](./redis基本命令.md)
 - [k8s常用命令](./k8s常用命令.md)
+- [Minikube](./Minikube.md)
 - [android调试](./android调试.md)
 - [aria2](./aria2.md)
 - [charles使用](./charles使用.md)
