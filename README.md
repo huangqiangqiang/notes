@@ -29,6 +29,7 @@
   - [iOS离线测试包](./React-Native/iOS离线测试包.md)
   - [Testflight](./React-Native/Testflight.md)
 - Blog
+  - [k8s中使用nginx-ingress和kafka搜集请求日志](./blog/2019.11.12-使用nginx-ingress和kafka搜集请求日志.md)
   - [k8s实战（部署真实项目）](./blog/2019.10.25-k8s实战(部署实际项目).md)
   - [使用jmeter对接口进行并发测试](./blog/2019.10.17-使用jmeter对接口进行并发测试.md)
   - [Golang私有库](./blog/2019.08.08-Golang私有库.md)
