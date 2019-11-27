@@ -1,4 +1,6 @@
 
+
+- [elasticsearch笔记](./elasticsearch笔记.md)
 - [redis基本命令](./redis基本命令.md)
 - [k8s常用命令](./k8s常用命令.md)
 - [Minikube](./Minikube.md)
