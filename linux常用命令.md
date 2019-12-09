@@ -50,3 +50,9 @@ du -h /root --max-depth=1
 ```
 df -h
 ```
+
+# 查找文件
+```
+# 查找当前目录下以 .txt 结尾的文件
+find . -name "*.txt"
+```
