@@ -41,6 +41,9 @@ cat id_rsa.pub >> ~/.ssh/authorized_keys
 # 查看文件夹大小
 ```
 du -h
+
+# 查看 root 目录下各个文件夹大小
+du -h /root --max-depth=1
 ```
 
 # 查看系统一级文件夹大小
