@@ -109,3 +109,18 @@ RUN apk --no-cache add tzdata  && \
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo "Asia/Shanghai" > /etc/timezone
 ```
+
+# 使用 docker login 登录到私有 gitlab 仓库
+
+需要在 gitlab 的设置中创建一个 Personal Access Tokens 。输入 name 和 过期时间和权限。系统会给出密码。密码只显示一次。
+
+```
+[root@xxx /]# docker login <私有gitlab域名>
+Username: <用户名>
+Password: <密码>
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+```
