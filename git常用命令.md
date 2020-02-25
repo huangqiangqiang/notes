@@ -76,4 +76,16 @@ git stash pop
 # 查看stash
 git stash list
 ```
+解决 git 合并遇到的冲突问题
 
+我在远程上开了一个自己的分支 `dev_hqq` ，本地也有两个新提交并 push 到远端的 `dev_hqq` 分支上，现在在 master 分支上有另一个同事的提交，并且改了同一个文件。目前两个分支不能直接的合并。
+
+合并的流程是：
+
+1. 先用命令 `git pull --rebase origin master` 把 master 分支的代码合过来
+
+2. 发现冲突，解决冲突
+
+3. 使用 `git add .` 把解决冲突的文件加入到缓冲区中
+
+4. 使用 `git --rebase continue` 继续合并下一个commit，直到成功
