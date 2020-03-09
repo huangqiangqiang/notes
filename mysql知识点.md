@@ -16,3 +16,48 @@ insert into teacher(id, name, phone, avatar) values('%d', '%s', '%s', '%s') on d
 2. 数据库编码格式设置为utf8mb4，理论上向下兼容utf8。
 
 3. 连接数据库的url带上charset='utf8mb4'参数
+
+# inner join
+
+内连接，用来获取两个表中字段匹配关系的记录，结果如下所示：
+
+![inner join](./images/img_innerjoin.gif)
+
+举个例子：有一张用户收藏表和商品表，收藏表里存的是用户id和对应的商品id，现在要查询某个用户收藏的商品信息。
+
+我之前的做法会是这样，先查出收藏表中用户的所有收藏记录，在把记录中的商品id拼成一个数组，用 `in (?)` 方式查询出收藏的商品信息。
+
+上面这种方法需要两次查询，我们使用 `inner join` 只要一次就够了，具体的写法如下：
+
+```
+select * from favorite_tbl inner join product_tbl on favorite_tbl.product_id = product_tbl.id
+```
+
+以上的 SQL 语句等价于：
+
+```
+select * from favorite_tbl, product_tbl where favorite_tbl.product_id = product_tbl.id
+```
+
+按照以上例子的需求，我们的 SQL 语句可以这样写：
+
+```
+select * from favorite_tbl, product_tbl where favorite_tbl.product_id = product_tbl.id and favorite_tbl.user_id = '1'
+```
+
+这样，就查找出来用户id为1的用户的收藏记录。
+
+值得注意的是：如果 favorite_tbl 表中的某个 product_id 在 product_tbl 中找不到，则不会返回这条记录，也就是说返回的是两张表中都匹配的记录。
+
+用 gorm 的写法如下：
+
+```
+db.Raw("select * from favorite_tbl, product_tbl where and favorite_tbl.product_id = product_tbl.id and favorite_tbl.user_id = '1'").Scan(&result)
+```
+这种是直接写 SQL 语句的，还有一种如下：
+
+```
+// Favorite 模型对应 favorite_tbl 表
+result := []models.Favorite{}
+db.Joins("join product_tbl on product_tbl.id = favorite_tbl.product_id and favorite_tbl.user_id = '1'").Find(&result)
+```
