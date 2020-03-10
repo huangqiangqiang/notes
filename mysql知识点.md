@@ -49,7 +49,35 @@ select * from favorite_tbl, product_tbl where favorite_tbl.product_id = product_
 
 值得注意的是：如果 favorite_tbl 表中的某个 product_id 在 product_tbl 中找不到，则不会返回这条记录，也就是说返回的是两张表中都匹配的记录。
 
-用 gorm 的写法如下：
+# left join
+
+了解了以上 inner join 之后，了解 left 和 right 的 join 就容易多了，先来看下图：
+
+![inner join](./images/img_leftjoin.gif)
+
+left join 和 inner join 的区别是，left join 会把左表的全部记录查出，举个例子：
+
+```
+select * from favorite_tbl left join product_tbl on favorite_tbl.product_id = product_tbl.id
+```
+
+以上 SQL 语句的左表是 favorite_tbl ，右表是 product_tbl ，条件是 favorite_tbl.product_id = product_tbl.id ，即使左表的 product_id 在右表中对应的 id 不存在，也会查出来。而使用 inner join 的话，product_id 在右表不存在是不会返回的。
+
+# right join
+
+同 left join
+
+![inner join](./images/img_rightjoin.gif)
+
+# on 和 where
+
+1. 对于left join，不管on后面跟什么条件，左表的数据全部查出来，因此要想过滤需把条件放到where后面
+
+2. 对于inner join，满足on后面的条件表的数据才能查出，可以起到过滤作用。也可以把条件放到where后面。
+
+# gorm 写法
+
+用 gorm 的 inner join 写法如下：
 
 ```
 db.Raw("select * from favorite_tbl, product_tbl where and favorite_tbl.product_id = product_tbl.id and favorite_tbl.user_id = '1'").Scan(&result)
