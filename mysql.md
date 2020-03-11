@@ -74,18 +74,3 @@ select * from favorite_tbl left join product_tbl on favorite_tbl.product_id = pr
 1. 对于left join，不管on后面跟什么条件，左表的数据全部查出来，因此要想过滤需把条件放到where后面
 
 2. 对于inner join，满足on后面的条件表的数据才能查出，可以起到过滤作用。也可以把条件放到where后面。
-
-# gorm 写法
-
-用 gorm 的 inner join 写法如下：
-
-```
-db.Raw("select * from favorite_tbl, product_tbl where and favorite_tbl.product_id = product_tbl.id and favorite_tbl.user_id = '1'").Scan(&result)
-```
-这种是直接写 SQL 语句的，还有一种如下：
-
-```
-// Favorite 模型对应 favorite_tbl 表
-result := []models.Favorite{}
-db.Joins("join product_tbl on product_tbl.id = favorite_tbl.product_id and favorite_tbl.user_id = '1'").Find(&result)
-```
