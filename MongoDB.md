@@ -22,6 +22,16 @@ mongodb://${username}:${password}@SERVER_IP:27017/${database_name}?authSource=ad
 ```
 `authSource`表示用哪个数据库来验证用户名和密码，默认是`admin`
 
+# mongo 命令行连接
+
+```
+mongo 192.168.1.2 -u xxx -p xxx --authenticationDatabase admin
+```
+或
+```
+mongo --host mongodb://${username}:${password}@SERVER_IP:27017/${database_name}?authSource=admin
+```
+
 # 按时间倒序
 
 ```
