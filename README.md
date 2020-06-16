@@ -46,9 +46,9 @@
   - [MongoDB](./笔记/MongoDB.md)
   - [Gitlab部分功能使用指南](./笔记/Gitlab部分功能使用指南.md)
   - [linux常用命令](./笔记/linux常用命令.md)
-- 微信小程序
-  - [注意点](./微信小程序/注意点.md) 
-  - [获取unionid](./微信小程序/获取unionid.md)
+- 小程序
+  - [注意点](./小程序/注意点.md) 
+  - [获取unionid](./小程序/获取unionid.md)
 - React-Native
   - [开发环境搭建](./React-Native/开发环境搭建.md) 
   - [实际接手项目后的一些坑](./React-Native/实际接手项目后的一些坑.md)
