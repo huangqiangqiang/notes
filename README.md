@@ -46,8 +46,6 @@
   - [MongoDB](./笔记/MongoDB.md)
   - [Gitlab部分功能使用指南](./笔记/Gitlab部分功能使用指南.md)
   - [linux常用命令](./笔记/linux常用命令.md)
-<!-- - 教程
-  - [docker](./tutorial/docker.md) -->
 - 微信小程序
   - [注意点](./微信小程序/注意点.md) 
   - [获取unionid](./微信小程序/获取unionid.md)
