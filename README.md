@@ -1,65 +1,3 @@
-<details>
-<summary>笔记</summary>
-
-- [elasticsearch笔记](./笔记/elasticsearch笔记.md)
-
-- [redis基本命令](./笔记/redis基本命令.md)
-
-- [k8s常用命令](./笔记/k8s常用命令.md)
-
-- [Minikube](./笔记/Minikube.md)
-
-- [android调试](./笔记/android调试.md)
-- [aria2](./笔记/aria2.md)
-- [charles使用](./笔记/charles使用.md)
-- [docker常用命令](./笔记/docker常用命令.md)
-- [gcp vm常用命令](./笔记/gcp-vm常用命令.md)
-- [git常用命令](./笔记/git常用命令.md)
-- [NAS](./笔记/NAS.md)
-- [php开发环境搭建-Yii2](./笔记/php开发环境搭建-Yii2.md)
-- [vscode常用命令](./笔记/vscode常用命令.md)
-- [压力测试](./笔记/压力测试.md)
-- [机器学习](./笔记/机器学习.md)
-- [设计图交付验收注意事项](./笔记/设计图交付验收注意事项.md)
-- [mysql](./笔记/mysql.md)
-- [路由器](./笔记/路由器.md)
-- [MongoDB](./笔记/MongoDB.md)
-- [Gitlab部分功能使用指南](./笔记/Gitlab部分功能使用指南.md)
-- [linux常用命令](./笔记/linux常用命令.md)
-</details>
-
-<!-- - 笔记
-  - [elasticsearch笔记](./笔记/elasticsearch笔记.md)
-  - [redis基本命令](./笔记/redis基本命令.md)
-  - [k8s常用命令](./笔记/k8s常用命令.md)
-  - [Minikube](./笔记/Minikube.md)
-  - [android调试](./笔记/android调试.md)
-  - [aria2](./笔记/aria2.md)
-  - [charles使用](./笔记/charles使用.md)
-  - [docker常用命令](./笔记/docker常用命令.md)
-  - [gcp vm常用命令](./笔记/gcp-vm常用命令.md)
-  - [git常用命令](./笔记/git常用命令.md)
-  - [NAS](./笔记/NAS.md)
-  - [php开发环境搭建-Yii2](./笔记/php开发环境搭建-Yii2.md)
-  - [vscode常用命令](./笔记/vscode常用命令.md)
-  - [压力测试](./笔记/压力测试.md)
-  - [机器学习](./笔记/机器学习.md)
-  - [设计图交付验收注意事项](./笔记/设计图交付验收注意事项.md)
-  - [mysql](./笔记/mysql.md)
-  - [路由器](./笔记/路由器.md)
-  - [MongoDB](./笔记/MongoDB.md)
-  - [Gitlab部分功能使用指南](./笔记/Gitlab部分功能使用指南.md)
-  - [linux常用命令](./笔记/linux常用命令.md) -->
-<!-- - 教程
-  - [docker](./tutorial/docker.md) -->
-- 微信小程序
-  - [注意点](./微信小程序/注意点.md) 
-  - [获取unionid](./微信小程序/获取unionid.md)
-- React-Native
-  - [开发环境搭建](./React-Native/开发环境搭建.md) 
-  - [实际接手项目后的一些坑](./React-Native/实际接手项目后的一些坑.md)
-  - [iOS离线测试包](./React-Native/iOS离线测试包.md)
-  - [Testflight](./React-Native/Testflight.md)
 - Blog
   - [数据结构](./blog/2020.05.12-数据结构.md)
   - [深度学习入门](./blog/2019.12.28-深度学习入门.md)
@@ -86,3 +24,35 @@
   - [提交开源库到Cocoapods](./blog/2017.5.21-提交开源库到Cocoapods.md)
   - [Cocoapods搭建私有库](./blog/2017.3.7-Cocoapods搭建私有库.md)
   - [Cordova源码解析](./blog/2017.2.20-Cordova源码解析.md)
+- 笔记
+  - [elasticsearch笔记](./笔记/elasticsearch笔记.md)
+  - [redis基本命令](./笔记/redis基本命令.md)
+  - [k8s常用命令](./笔记/k8s常用命令.md)
+  - [Minikube](./笔记/Minikube.md)
+  - [android调试](./笔记/android调试.md)
+  - [aria2](./笔记/aria2.md)
+  - [charles使用](./笔记/charles使用.md)
+  - [docker常用命令](./笔记/docker常用命令.md)
+  - [gcp vm常用命令](./笔记/gcp-vm常用命令.md)
+  - [git常用命令](./笔记/git常用命令.md)
+  - [NAS](./笔记/NAS.md)
+  - [php开发环境搭建-Yii2](./笔记/php开发环境搭建-Yii2.md)
+  - [vscode常用命令](./笔记/vscode常用命令.md)
+  - [压力测试](./笔记/压力测试.md)
+  - [机器学习](./笔记/机器学习.md)
+  - [设计图交付验收注意事项](./笔记/设计图交付验收注意事项.md)
+  - [mysql](./笔记/mysql.md)
+  - [路由器](./笔记/路由器.md)
+  - [MongoDB](./笔记/MongoDB.md)
+  - [Gitlab部分功能使用指南](./笔记/Gitlab部分功能使用指南.md)
+  - [linux常用命令](./笔记/linux常用命令.md)
+<!-- - 教程
+  - [docker](./tutorial/docker.md) -->
+- 微信小程序
+  - [注意点](./微信小程序/注意点.md) 
+  - [获取unionid](./微信小程序/获取unionid.md)
+- React-Native
+  - [开发环境搭建](./React-Native/开发环境搭建.md) 
+  - [实际接手项目后的一些坑](./React-Native/实际接手项目后的一些坑.md)
+  - [iOS离线测试包](./React-Native/iOS离线测试包.md)
+  - [Testflight](./React-Native/Testflight.md)
