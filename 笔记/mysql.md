@@ -76,15 +76,32 @@ select * from favorite_tbl left join product_tbl on favorite_tbl.product_id = pr
 2. 对于inner join，满足on后面的条件表的数据才能查出，可以起到过滤作用。也可以把条件放到where后面。
 
 
-# 慢查询
-
-慢查询就是执行的比较慢的SQL语句， mysql 中提供慢查询日志，这个日志会记录执行时间超过 10s 的 SQL 语句。
-
-# 慢查询的优化
-
-
 # 建立索引
 
+建立索引能提高查询速度，但是会降低写入的速度。因为还要维护索引。
 
+创建索引：
 
-# 建立复合索引
+```
+create index <indexName> on <tableName>
+```
+
+查看索引
+
+```
+show index from <tableName>
+或
+show keys from <tableName>
+```
+
+删除索引
+
+```
+drop index <indexName> on <tableName>
+```
+
+创建联合索引（当查询条件为2个以上时，就可以用联合索引）
+
+```
+create index <indexName> on <tableName> (<col1>, <col2>, <col3>)
+```
