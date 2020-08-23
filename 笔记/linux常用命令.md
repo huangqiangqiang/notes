@@ -23,6 +23,7 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 输入`top`后按`1`
 
 # CI中使用公私钥
+
 1. 生成当前用户的ssh: 
 ```
 ssh-keygen -t rsa
@@ -67,6 +68,7 @@ shm              64M     0   64M   0% /var/lib/docker/containers/f6090219cc71517
 
 
 # 查找文件
+
 ```
 # 查找当前目录下以 .txt 结尾的文件
 find . -name "*.txt"
