@@ -1,4 +1,5 @@
 - Blog
+  - [git使用规范](./blog/2020.08.21-git使用规范)
   - [数据结构](./blog/2020.05.12-数据结构.md)
   - [深度学习入门](./blog/2019.12.28-深度学习入门.md)
   - [k8s中使用nginx-ingress和kafka搜集请求日志](./blog/2019.11.12-使用nginx-ingress和kafka搜集请求日志.md)
