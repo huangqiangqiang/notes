@@ -41,7 +41,7 @@ cat id_rsa.pub >> ~/.ssh/authorized_keys
 
 # 查看文件夹大小
 ```
-du -h
+du -h -d 1
 或
 du -sh *
 
