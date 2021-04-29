@@ -1,4 +1,5 @@
 - Blog
+  - [搭建kafka服务](./blog/2021.04.29-搭建kafka服务.md)
   - [为gitlab添加runner](./blog/2021.04.20-为gitlab添加runner.md)
   - [网络相关概念扫盲](./blog/2021.02.01-网络相关概念扫盲.md)
   - [2020年终总结](./blog/2021.01.15-2020年终总结.md)
