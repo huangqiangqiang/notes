@@ -1,4 +1,5 @@
 - Blog
+  - [Ubuntu安装基于docker安装支持GPU的tensorflow](./blog/2021.05.30-Ubuntu安装基于docker安装支持GPU的tensorflow.md)
   - [如何安装双系统](./blog/2021.05.29-如何安装双系统.md)
   - [搭建kafka服务](./blog/2021.04.29-搭建kafka服务.md)
   - [为gitlab添加runner](./blog/2021.04.20-为gitlab添加runner.md)
