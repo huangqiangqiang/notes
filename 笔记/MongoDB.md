@@ -53,6 +53,15 @@ mongo --host mongodb://${username}:${password}@SERVER_IP:27017/${database_name}?
 {timestamp: {$gte: '1553617031966', $lt: '1553616593572'}}
 ```
 
+# 修改数据库密码
+
+命令行连接上之后
+
+```
+use admin
+db.changeUserPassword("your_user_name", "new_password")
+```
+
 # 数据备份
 
 最新有一个需求，因为有很多项目都有搜集请求日志。导致 mongodb 中的日志很多，但又是不怎么重要的。所以现在的优化方案是每周做一次本周到上周时间范围内的备份，然后删除3个月以前的数据。因为日志主要是查询用，还原当时的请求，一般时间太久的话是不需要的，所以直接备份成文件，从数据库中删除。
