@@ -1,4 +1,5 @@
 - Blog
+  - [Mysql 主从复制](./blog/2021.11.12-mysql主从复制.md)
   - [使用 Keras 初探神经网络](./blog/2021.07.08-使用Keras初探神经网络.md)
   - [Ubuntu 基于 docker 安装支持 GPU 的 tensorflow](./blog/2021.05.30-Ubuntu安装基于docker安装支持GPU的tensorflow.md)
   - [如何安装双系统](./blog/2021.05.29-如何安装双系统.md)
