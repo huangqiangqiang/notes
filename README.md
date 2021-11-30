@@ -1,4 +1,5 @@
 - Blog
+  - [新 Mac 必装软件](./blog/2021.11.30-新Mac必装软件.md)
   - [DataX 数据同步](./blog/2021.11.17-DataX数据同步.md)
   - [Mysql 主从复制](./blog/2021.11.12-mysql主从复制.md)
   - [使用 Keras 初探神经网络](./blog/2021.07.08-使用Keras初探神经网络.md)
