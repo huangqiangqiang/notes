@@ -8,7 +8,7 @@
 ### 设置自动登录
 
 <!-- 如果你有给账号设置过密码的话，那么每次开机或者睡眠模式唤醒后都需要登录，这个我们可以把它设置为自动登录，更符合掌机的使用习惯。 -->
-**取消开机时的自动登录**
+**开机时的自动登录**
 
 [下载 AutoLogin](https://learn.microsoft.com/en-us/sysinternals/downloads/autologon) ，打开 `Autologon.exe`，输入密码，点击 enable。
 
