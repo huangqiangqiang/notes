@@ -71,4 +71,4 @@
   - [iOS离线测试包](./React-Native/iOS离线测试包.md)
   - [Testflight](./React-Native/Testflight.md)
 - Steam Deck
-  - [SteamDeck-windows必装软件和手柄驱动](./自由职业/SteamDeck-windows必装软件和手柄驱动.md)
+  - [SteamDeck-windows必装软件和手柄驱动](./SteamDeck/SteamDeck-windows必装软件和手柄驱动.md)
