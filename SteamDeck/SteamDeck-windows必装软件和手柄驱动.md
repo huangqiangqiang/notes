@@ -66,39 +66,26 @@ edge - 设置 - 左上角更多 - 系统和性能 - 关闭 “在 Microsoft Edge
 
 ## 按键驱动
 
-> 默认情况下，windows 对 steamdeck 的按键识别的不太好，我比较了目前主流的 3 种控制器驱动软件，SWICD，steam deck tools，handheld companion。接下来我们来聊聊控制器驱动装哪个比较好。
+默认情况下，windows 对 steamdeck 的按键识别的不太好，我比较了目前主流的 3 种控制器驱动软件，SWICD，steam deck tools，handheld companion。接下来我们来聊聊控制器驱动装哪个比较好。
 
 
 ### SWICD
 先来聊聊 swicd。他会虚拟出一个 xbox 360 的手柄，将 steam deck 的按键映射到这个虚拟的手柄上。在游戏中的话就是会显示连了一个 xbox360 的手柄。
 
-安装的话我们需要打开 swicd 的官网。https://github.com/mKenfenheuer/steam-deck-windows-usermode-driver/wiki/Installation
+安装的话我们需要打开[SWICD 官网](https://github.com/mKenfenheuer/steam-deck-windows-usermode-driver/wiki/Installation)
 
 但是这个的话我觉得已经不是很好用了，因为把游戏以非 steam 游戏的方式添加到 steam 库中，也能达到一样的效果。
 
 
-根据安装教程一步步执行。
+根据安装教程一步步安装就行。
 
 
 ### Steam deck tools
 
-steam deck tools 除了能实现 swicd 一样的功能，而且还能实现类似 SteamOS 系统对风扇转速，游戏 fps，功耗这些的控制。
-
-github 上下载绿色包，解压就能用的。文件夹内有四个 exe 文件，分别对应风扇控制，xxx，xxx，手柄控制。但是第一次启动的时候会提示缺少依赖库，但是别慌，他问我们是否安装这个缺失的依赖库，点击确定。
-
-装完之后，我们运行这四个 exe 文件。启动后，在小图标这边会显示红色，鼠标移上去提示缺少 RTSS。右键有一个 install missing RTSS 的选项，我们点击进去。页面拉到最后，点击 Final 版本的下载。
-
-下载好后双击安装，安装完后启动 RTSS，
-
-use kernel drivers：作用是查看cpu使用率和风扇转速，但是有可能会被判断成外挂。如果是联机游戏的话要考虑一下。
-
-
-Steam 控制器
-第一项是只使用 360，ps4 的控制器
-第二个是如果打开steam 就使用 steam 控制器，但是必须禁用 steam 的桌面模式
-第三个是忽略 steam 的影响，就是要自己处理按键冲突的问题。
+[下载地址](https://github.com/ayufan/steam-deck-tools/releases)
 
 ### handheldCompanion
 
-这个工具和 Steam deck tools 差不多，像功耗控制，fps，控制器按键映射，该有的功能也都有，但是他还多了一个漂亮的 GUI 界面，支持组合键等等。但是相比于 Steam deck tools，这个要花一些学习成本，而且他每个游戏都需要单独配置按键映射，我装完 handheldCompanion 之后也是花了两个小时才能在游戏中正确识别手柄。感觉就是需要手动配置的地方有点多，不像 steam deck tools 那样开箱即用。但是他的功能和自由度方面确实比 steam deck tools 要高一些。哦，还有一个原因，handheldCompanion 的安装可能需要网络好点才行，他在 0.16 版本之后不提供离线安装的方式了。安装过程中会去 github 还有一些国外网站下载文件的，所以对网络有点要求。
+[下载地址](https://github.com/Valkirie/HandheldCompanion/releases)
 
+这个工具和 Steam deck tools 差不多，像功耗控制，fps，控制器按键映射，该有的功能也都有，但是他还多了一个漂亮的 GUI 界面，支持组合键等等。但是相比于 Steam deck tools，这个要花一些学习成本，而且他每个游戏都需要单独配置按键映射，我装完 handheldCompanion 之后也是花了两个小时才能在游戏中正确识别手柄。感觉就是需要手动配置的地方有点多，不像 steam deck tools 那样开箱即用。但是他的功能和自由度方面确实比 steam deck tools 要高一些。安装过程需要梯子。
