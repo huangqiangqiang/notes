@@ -98,8 +98,6 @@ Steam 控制器
 第二个是如果打开steam 就使用 steam 控制器，但是必须禁用 steam 的桌面模式
 第三个是忽略 steam 的影响，就是要自己处理按键冲突的问题。
 
-介绍几个常用的快捷键
-
 ### handheldCompanion
 
 这个工具和 Steam deck tools 差不多，像功耗控制，fps，控制器按键映射，该有的功能也都有，但是他还多了一个漂亮的 GUI 界面，支持组合键等等。但是相比于 Steam deck tools，这个要花一些学习成本，而且他每个游戏都需要单独配置按键映射，我装完 handheldCompanion 之后也是花了两个小时才能在游戏中正确识别手柄。感觉就是需要手动配置的地方有点多，不像 steam deck tools 那样开箱即用。但是他的功能和自由度方面确实比 steam deck tools 要高一些。哦，还有一个原因，handheldCompanion 的安装可能需要网络好点才行，他在 0.16 版本之后不提供离线安装的方式了。安装过程中会去 github 还有一些国外网站下载文件的，所以对网络有点要求。
