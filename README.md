@@ -62,6 +62,7 @@
   - [MongoDB](./笔记/MongoDB.md)
   - [Gitlab 部分功能使用指南](./笔记/Gitlab部分功能使用指南.md)
   - [linux 常用命令](./笔记/linux常用命令.md)
+  - [服务器常用命令](./笔记/服务器常用命令.md)
 - 小程序
   - [注意点](./小程序/注意点.md) 
   - [获取 unionid](./小程序/获取unionid.md)

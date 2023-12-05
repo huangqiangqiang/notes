@@ -1,1 +1,0 @@
-- 按住command+k，再按v，打开markdown预览
