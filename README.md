@@ -1,4 +1,5 @@
 - Blog
+  - [英语启蒙](./blog/2026.02.22-小孩英语启蒙.md)
   - [postgres 集成](./blog/2022.07.07-postgres集成.md)
   - [electron 遇到的问题记录](./blog/2022.07.05-electron遇到的问题记录.md)
   - [新 Mac 必装软件](./blog/2021.11.30-新Mac必装软件.md)
